@@ -12,13 +12,13 @@ import { initializeApp } from "firebase/app";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyA5VDbEHczlFpYaqzH6_tZJ61cG9uaTWfA",
-  authDomain: "nobs-chatroom.firebaseapp.com",
-  databaseURL: "https://nobs-chatroom-default-rtdb.firebaseio.com",
-  projectId: "nobs-chatroom",
-  storageBucket: "nobs-chatroom.appspot.com",
-  messagingSenderId: "212748066762",
-  appId: "1:212748066762:web:a42559778556ae8096b933"
+  apiKey : process.env.apiKey,
+  authDomain: process.env.authDomain,
+  databaseURL: process.env.databaseURL,
+  projectId: process.env.projectId,
+  storageBucket: process.env.storageBucket,
+  messagingSenderId: process.env.messagingSenderId,
+  appId: process.env.appId
 };
 
 // Initialize Firebase
