@@ -4,6 +4,26 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyA5VDbEHczlFpYaqzH6_tZJ61cG9uaTWfA",
+  authDomain: "nobs-chatroom.firebaseapp.com",
+  databaseURL: "https://nobs-chatroom-default-rtdb.firebaseio.com",
+  projectId: "nobs-chatroom",
+  storageBucket: "nobs-chatroom.appspot.com",
+  messagingSenderId: "212748066762",
+  appId: "1:212748066762:web:a42559778556ae8096b933"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
